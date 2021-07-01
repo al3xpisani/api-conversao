@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-service
+spec:
+  selector:
+    app: node-api-conversao
+  ports:
+    - port: 80
+      targetPort: 3000
+      nodePort: 30000
+  type: NodePort
