@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mydeployment
+  name: mydeployment1
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: node
+      app: node-api-conversao
   template:
     metadata:
       labels:
-        app: node
+        app: node-api-conversao
     spec:
       containers:
         - name: site
